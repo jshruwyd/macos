@@ -59,9 +59,9 @@ ADD --chmod=644 \
 EXPOSE 8006 5900
 VOLUME /storage
 
-ENV RAM_SIZE "3G"
+ENV RAM_SIZE "8G"
 ENV CPU_CORES "2"
-ENV DISK_SIZE "32G"
-ENV VERSION "sonoma"
+ENV DISK_SIZE "60G"
+ENV VERSION "big-sur"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
